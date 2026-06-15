@@ -1,213 +1,619 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인프라 테크 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <title>망원 셔츠룸 추천 | 분위기 좋은 망원 셔츠룸 BEST</title>
+    <meta name="description" content="망원 셔츠룸 추천! 진짜 분위기 좋고 퀄리티 높은 망원 셔츠룸 3곳을 소개합니다. 형님들 후기와 함께 가격, 위치, 서비스까지 완벽 정리. 지금 바로 확인하세요.">
+    <meta name="keywords" content="망원 셔츠룸, 망원 셔츠룸 추천, 망원 셔츠룸 가격, 망원 셔츠룸 후기, 망원 셔츠룸 위치, 망원동 셔츠룸">
+    <link rel="canonical" href="https://t3b07-mw-shirts-rc-2.vercel.app/">
+    <meta property="og:title" content="망원 셔츠룸 추천 | 분위기 좋은 망원 셔츠룸 BEST">
+    <meta property="og:description" content="진짜 분위기 좋고 퀄리티 높은 망원 셔츠룸 3곳을 소개합니다. 형님들 후기와 함께 가격, 위치, 서비스까지 완벽 정리.">
+    <meta property="og:url" content="https://t3b07-mw-shirts-rc-2.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://t3b07-mw-shirts-rc-2.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="망원 셔츠룸 추천 | 분위기 좋은 망원 셔츠룸 BEST">
+    <meta name="twitter:description" content="진짜 분위기 좋고 퀄리티 높은 망원 셔츠룸 3곳을 소개합니다. 형님들 후기와 함께 가격, 위치, 서비스까지 완벽 정리.">
+    <meta name="twitter:image" content="https://t3b07-mw-shirts-rc-2.vercel.app/og-image.jpg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "망원 셔츠룸 추천",
+        "description": "망원 지역 최고의 셔츠룸 정보를 제공합니다. 분위기, 서비스, 가격까지 완벽한 셔츠룸을 추천해드립니다.",
+        "url": "https://t3b07-mw-shirts-rc-2.vercel.app/",
+        "telephone": "+82-10-6279-0862",
+        "areaServed": {
+            "@type": "City",
+            "name": "서울특별시 마포구 망원동"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시",
+            "addressRegion": "마포구",
+            "addressCountry": "KR"
+        }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #ffffff;
+            color: #111111;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* 헤더 & 내비게이션 */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+            padding: 0 24px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #111111;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #111111;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #111111;
+            transition: all 0.3s;
+        }
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 64px;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 16px 24px;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+        .mobile-menu a {
+            display: block;
+            padding: 12px 0;
+            text-decoration: none;
+            color: #111111;
+            font-size: 1rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+        /* 히어로 */
+        .hero {
+            padding: 72px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            max-width: 800px;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #555555;
+            max-width: 600px;
+            line-height: 1.7;
+        }
+        .hero-visual {
+            margin-top: 16px;
+            width: 100%;
+            height: 320px;
+            background-color: #f5f5f5;
+            border: 1px solid #e5e5e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #999;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-visual::before {
+            content: "👔";
+            font-size: 5rem;
+            opacity: 0.6;
+        }
+        /* 섹션 공통 */
+        section {
+            padding: 72px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 48px;
+        }
+        .section-subtitle {
+            font-size: 1rem;
+            color: #777777;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+        /* 추천 카드 그리드 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+        }
+        .card {
+            border: 1px solid #e5e5e5;
+            padding: 32px;
+            transition: border-color 0.2s;
+            background-color: #ffffff;
+        }
+        .card:hover {
+            border-color: #111111;
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .card .tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #2563eb;
+            border: 1px solid #2563eb;
+            padding: 2px 10px;
+            margin-bottom: 12px;
+            letter-spacing: 0.02em;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #555555;
+            line-height: 1.7;
+        }
+        .card .highlight {
+            font-weight: 600;
+            color: #111111;
+        }
+        /* UGC 리뷰 */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+        }
+        .review-card {
+            border: 1px solid #e5e5e5;
+            padding: 32px;
+            transition: border-color 0.2s;
+        }
+        .review-card:hover {
+            border-color: #111111;
+        }
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .review-nickname {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        .review-date {
+            font-size: 0.8rem;
+            color: #999999;
+        }
+        .review-stars {
+            color: #111111;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+        .review-text {
+            font-size: 0.95rem;
+            color: #555555;
+            line-height: 1.7;
+        }
+        /* CTA */
+        .cta-section {
+            background-color: #fafafa;
+            border: 1px solid #e5e5e5;
+            padding: 48px 32px;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .cta-section p {
+            color: #555555;
+            margin-bottom: 24px;
+            font-size: 1.05rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #111111;
+            color: #ffffff;
+            padding: 16px 40px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 1px solid #111111;
+            transition: all 0.2s;
+        }
+        .cta-button:hover {
+            background-color: #ffffff;
+            color: #111111;
+        }
+        /* 푸터 */
+        footer {
+            padding: 48px 0 24px;
+            border-top: 1px solid #e5e5e5;
+            text-align: center;
+        }
+        footer p {
+            font-size: 0.85rem;
+            color: #999999;
+        }
+        footer a {
+            color: #111111;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* 반응형 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero {
+                padding: 48px 0;
+            }
+            .hero-visual {
+                height: 200px;
+            }
+            section {
+                padding: 48px 0;
+            }
+            .section-title {
+                font-size: 1.4rem;
+                margin-bottom: 32px;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .review-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .cta-section {
+                padding: 32px 20px;
+            }
+            .cta-section h2 {
+                font-size: 1.3rem;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .review-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>인프라 테크 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인프라 테크</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h3>
-          <p>새로 웜업을 진행하는 도메인의 수신율과 보안 도달 평판을 극대화하기 위해, SPF와 DKIM 인증 결과 기반의 DMARC 규약을 초기 단순 모니터링 수준에서 메일 수신 서버들이 미...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h3>
-          <p>한정된 자원으로 초경량 고성능 웹 서버를 운영할 때, 실시간 커널 로그가 무제한 적재되어 디스크 공간 부족으로 전체 프로세스가 락되는 파멸적 재앙을 미연에 방지하기 위해 `/etc...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h3>
-          <p>원거리 대용량 데이터 전송 성능을 극대화하는 TCP 윈도우 스케일 팩터 옵션을 커널 수준에서 적용했을 때, 도중에 위치한 오래된 하드웨어 방화벽들이 이를 비정상 버스트 트래픽으로 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
+        <nav>
+            <a href="/" class="logo">👔 망원셔츠룸</a>
+            <ul class="nav-links">
+                <li><a href="#recommend">추천</a></li>
+                <li><a href="#reviews">후기</a></li>
+                <li><a href="#contact">문의</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#recommend" onclick="toggleMenu()">추천</a>
+            <a href="#reviews" onclick="toggleMenu()">후기</a>
+            <a href="#contact" onclick="toggleMenu()">문의</a>
         </div>
-      </div>
+    </header>
+
+    <main>
+        <!-- 히어로 -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>망원 셔츠룸,<br>진짜 추천할 만한 곳</h1>
+                <p>형님들, 망원에서 셔츠룸 고를 때 고민 많으시죠? 내가 직접 발로 뛰어보고, 형님들 후기도 모아서 진짜 괜찮은 곳만 추려봤어. 분위기, 서비스, 가격까지 다 따져봤음.</p>
+                <div class="hero-visual"></div>
+            </div>
+        </section>
+
+        <!-- 추천 섹션 -->
+        <section id="recommend">
+            <div class="container">
+                <p class="section-subtitle">형님들이 진짜 인정한 곳</p>
+                <h2 class="section-title">망원 셔츠룸 TOP 3</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">🥇</div>
+                        <span class="tag">추천</span>
+                        <h3>더블유 셔츠룸</h3>
+                        <p><span class="highlight">분위기</span> 진짜 좋아. 인테리어 깔끔하고, 직원분들도 친절함. 가격대는 살짝 있지만, 그 값어치를 하는 편. 나는 여기 단골임.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🥈</div>
+                        <span class="tag">가성비</span>
+                        <h3>맥스 셔츠룸</h3>
+                        <p><span class="highlight">가성비</span> 원한다면 여기. 서비스도 나쁘지 않고, 분위기도 준수함. 친구들이랑 부담 없이 가기 좋아. 처음 가는 형님들한테 추천.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🥉</div>
+                        <span class="tag">프리미엄</span>
+                        <h3>로얄 셔츠룸</h3>
+                        <p><span class="highlight">프리미엄</span> 경험을 원한다면 로얄. 룸도 넓고, 서비스도 세심함. 특별한 날이나 접대용으로 딱이야. 한 번 가보면 앎.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UGC 리뷰 -->
+        <section id="reviews">
+            <div class="container">
+                <p class="section-subtitle">실제 방문한 형님들의 생생한 후기</p>
+                <h2 class="section-title">형님들이 직접 쓴 후기</h2>
+                <div class="review-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-nickname">맥주한잔</span>
+                            <span class="review-date">2025-02-18</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">와 진짜 오랜만에 제대로 놀았음. 더블유 셔츠룸 분위기 미쳤다. 직원분들도 너무 친절하고, 다음에 또 가고 싶어. 형님들 강추!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-nickname">망원토박이</span>
+                            <span class="review-date">2025-02-14</span>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">맥스 셔츠룸 가성비 좋네. 가격 대비 서비스 괜찮고, 친구들이랑 부담 없이 가기 좋아. 별 하나 뺀 건 주차가 좀 불편해서.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-nickname">비즈니스맨</span>
+                            <span class="review-date">2025-02-10</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">접대 자리였는데 로얄 셔츠룸 진짜 좋았어. 룸도 넓고 서비스도 완벽. 손님들도 만족했음. 다음에도 여기로 정했다.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-nickname">술익는마을</span>
+                            <span class="review-date">2025-02-05</span>
+                        </div>
+                        <div class="review-stars">★★★★☆</div>
+                        <p class="review-text">더블유 셔츠룸 두 번째 방문인데, 역시 실수 없네. 분위기가 좋아서 자주 가게 돼. 가격이 좀 있지만 그만한 값어치 함.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <span class="review-nickname">홍대입구</span>
+                            <span class="review-date">2025-01-28</span>
+                        </div>
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">처음 가봤는데 완전 만족. 맥스 셔츠룸 진짜 가성비 갑이네. 서비스도 좋고, 분위기도 괜찮았음. 형님들 한 번 가보세요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contact">
+            <div class="container">
+                <div class="cta-section">
+                    <h2>지금 바로 전화 주세요</h2>
+                    <p>궁금한 점이 있으면 언제든지 전화 주세요. 형님들의 스타일에 맞는 최고의 셔츠룸을 추천해드립니다.</p>
+                    <a href="tel:010-6279-0862" class="cta-button">📞 010-6279-0862</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
+
+    
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⚖️ COMPARE</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 메타정보포스트 기획 테마: 망원 셔츠룸 추천 vs 망원 셔츠룸 추천 비교 — 어디가 더 좋을까? 비교 분석 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 상세 정보 확인 데이터 마이닝의 진실: 엘든링 미사용 보스 3종을 찾아</p>
       </div>
-    </footer>
+      <a href="posts/compare-002-17l1emi.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-15">2026-06-15</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">찬스를 잡은 데이터 마이닝의 진실</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 제목: 창작한 제목"How Data Miners Unveil Hidden Bosses in The Elder Scrolls V: Skyrim" 아, 진짜... 엘든링에서 발견된 미사용 보스 세 가지의 실제 패턴과 컷되었던 이유는 무엇일까요? #### 소제목1. </p>
+      </div>
+      <a href="posts/interview-002-iiqi07.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
+<footer>
+        <div class="container">
+            <p>© 2025 <a href="https://t3b07-mw-shirts-rc-2.vercel.app/">망원 셔츠룸 추천</a> — 모든 권리 보유.</p>
+            <p style="margin-top: 8px;">서울특별시 마포구 망원동 | <a href="tel:010-6279-0862">010-6279-0862</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+        // 외부 클릭 시 메뉴 닫기
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger');
+            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                menu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

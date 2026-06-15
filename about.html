@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <title>망원 셔츠룸 가격 & 위치 정보 | 완벽 정리</title>
+    <meta name="description" content="망원 셔츠룸 방문 전 꼭 확인해야 할 정보! 가격, 위치, 서비스, 주의사항까지 한눈에 정리. 형님들이 직접 경험하고 추천한 망원동 셔츠룸 상세 정보입니다.">
+    <meta name="keywords" content="망원 셔츠룸 가격, 망원 셔츠룸 위치, 망원 셔츠룸 정보, 망원동 셔츠룸, 망원 셔츠룸 서비스">
+    <link rel="canonical" href="https://t3b07-mw-shirts-rc-2.vercel.app/info">
+    <meta property="og:title" content="망원 셔츠룸 정보 | 가격 & 위치 완벽 정리">
+    <meta property="og:description" content="형님들을 위한 망원 셔츠룸 완벽 정보. 가격, 위치, 서비스, 꿀팁까지 모두 공개합니다.">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f8f8f8;
+            color: #1d1d1f;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* 헤더 & 내비게이션 */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #515154;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            padding: 4px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-links a:hover {
+            color: #1d1d1f;
+            border-bottom-color: #1d1d1f;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #1d1d1f;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background: #ffffff;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 99;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            text-decoration: none;
+            color: #515154;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        /* 히어로 */
+        .hero {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #515154;
+            max-width: 640px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .hero .subtitle {
+            display: inline-block;
+            background: #e8e8ed;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #515154;
+        }
+
+        /* 섹션 */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #515154;
+            margin-bottom: 2rem;
+        }
+
+        /* 카드 그리드 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #f0f0f0;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+        }
+
+        .card .badge {
+            display: inline-block;
+            background: #f5f5f7;
+            padding: 2px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #515154;
+            margin-bottom: 0.8rem;
+        }
+
+        .card p {
+            color: #515154;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card .price {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .card .price span {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #86868b;
+        }
+
+        /* 테이블 */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .info-table th {
+            background: #f5f5f7;
+            padding: 16px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .info-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+            color: #515154;
+        }
+
+        .info-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* FAQ */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            border: 1px solid #f0f0f0;
+        }
+
+        .faq-item h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item p {
+            color: #515154;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* CTA */
+        .cta-box {
+            background: #1d1d1f;
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 48px 40px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .cta-box h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+
+        .cta-box .tel-link {
+            display: inline-block;
+            background: #ffffff;
+            color: #1d1d1f;
+            padding: 14px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta-box .tel-link:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(255,255,255,0.2);
+        }
+
+        /* 푸터 */
+        footer {
+            border-top: 1px solid #e5e5e5;
+            padding: 40px 0;
+            text-align: center;
+            color: #86868b;
+            font-size: 0.9rem;
+        }
+
+        /* 반응형 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-box {
+                padding: 32px 24px;
+            }
+
+            .cta-box h2 {
+                font-size: 1.5rem;
+            }
+
+            .info-table {
+                font-size: 0.85rem;
+            }
+
+            .info-table th,
+            .info-table td {
+                padding: 12px 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">망원셔츠룸</a>
+            <div class="nav-links">
+                <a href="/">홈</a>
+                <a href="/info">정보</a>
+                <a href="/review">후기</a>
+                <a href="/contact">문의</a>
+            </div>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/">홈</a>
+            <a href="/info">정보</a>
+            <a href="/review">후기</a>
+            <a href="/contact">문의</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="subtitle">망원 셔츠룸 완벽 가이드</span>
+                <h1>가격 & 위치,<br>이거 하나면 끝</h1>
+                <p>형님, 망원 셔츠룸 처음 가시죠? 가격부터 위치, 서비스까지 진짜 필요한 정보만 쏙쏙 정리했어요. 후회 없는 선택, 지금 확인하세요.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">망원 셔츠룸 가격표</h2>
+                <p class="section-subtitle">업소별로 가격대가 달라요. 형님들 후기 기반으로 평균 가격대를 정리했어요.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <span class="badge">#프리미엄</span>
+                        <h3>더블루 망원</h3>
+                        <p>2시간 기준 · 기본 테이블</p>
+                        <div class="price">15만원 <span>/ 1인</span></div>
+                        <p>VIP 룸 추가 시 5만원</p>
+                        <p>음료 및 안주 포함</p>
+                    </div>
+                    <div class="card">
+                        <span class="badge">#가성비</span>
+                        <h3>셔츠타임 망원</h3>
+                        <p>2시간 기준 · 기본 테이블</p>
+                        <div class="price">11만원 <span>/ 1인</span></div>
+                        <p>칵테일 1잔 포함</p>
+                        <p>주말 할증 1만원</p>
+                    </div>
+                    <div class="card">
+                        <span class="badge">#스페셜</span>
+                        <h3>라운지 망원</h3>
+                        <p>2시간 기준 · 기본 테이블</p>
+                        <div class="price">13만원 <span>/ 1인</span></div>
+                        <p>샴페인 하프 병 포함</p>
+                        <p>여성 매니저 서비스</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">위치 & 영업시간</h2>
+                <p class="section-subtitle">망원동 셔츠룸 밀집 지역. 지하철 망원역에서 도보 5~10분 거리예요.</p>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>업소명</th>
+                            <th>주소</th>
+                            <th>영업시간</th>
+                            <th>전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>더블루 망원</strong></td>
+                            <td>망원동 123-4 2층</td>
+                            <td>20:00 ~ 05:00</td>
+                            <td>02-123-4567</td>
+                        </tr>
+                        <tr>
+                            <td><strong>셔츠타임 망원</strong></td>
+                            <td>망원동 456-7 3층</td>
+                            <td>21:00 ~ 04:00</td>
+                            <td>02-234-5678</td>
+                        </tr>
+                        <tr>
+                            <td><strong>라운지 망원</strong></td>
+                            <td>망원동 789-1 4층</td>
+                            <td>20:00 ~ 06:00</td>
+                            <td>02-345-6789</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 1rem; color: #86868b; font-size: 0.9rem;">※ 위치는 대략적인 주소이며, 실제 위치는 전화 문의 부탁드립니다.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">서비스 & 꿀팁</h2>
+                <p class="section-subtitle">형님들이 실제로 경험하고 공유한 꿀팁이에요. 놓치면 아쉽습니다.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>💡 예약은 필수</h3>
+                        <p>주말엔 웨이팅 기본 30분. 미리 전화해서 예약하면 대기 없이 바로 입장 가능해요. 특히 더블루 망원은 인기 많아서 전화 예약 강추!</p>
+                    </div>
+                    <div
+</body>
+</html>

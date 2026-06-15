@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <title>망원 셔츠룸 추천 블로그 | 형님들이 알려주는 꿀팁</title>
+    <meta name="description" content="망원 셔츠룸, 진짜 가볼 만한 곳이 어딘지 궁금하시죠? 형님들이 직접 경험하고 추천하는 망원 셔츠룸 BEST 3. 분위기, 서비스, 가격까지 속 시원하게 알려드립니다.">
+    <meta name="keywords" content="망원 셔츠룸, 망원 셔츠룸 추천, 망원 셔츠룸 후기, 망원 셔츠룸 가격, 망원동 셔츠룸, 망원 셔츠룸 블로그">
+    <link rel="canonical" href="https://t3b07-mw-shirts-rc-2.vercel.app/">
+    <meta property="og:title" content="망원 셔츠룸 추천 | 형님들이 인정한 분위기 맛집">
+    <meta property="og:description" content="진짜 분위기 좋고 퀄리티 높은 망원 셔츠룸 3곳을 소개합니다. 형님들 후기와 함께 가격, 위치, 서비스까지 완벽 정리. 지금 바로 확인하세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b07-mw-shirts-rc-2.vercel.app/">
+    <meta property="og:image" content="https://t3b07-mw-shirts-rc-2.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #1a1a1a;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: #1a1a1a;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,255,255,0.98);
+            z-index: 200;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+        }
+        .mobile-menu.active {
+            display: flex;
+        }
+        .mobile-menu a {
+            font-size: 1.4rem;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .mobile-menu .close-btn {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            font-size: 2rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #1a1a1a;
+        }
+        .tel-link {
+            display: inline-block;
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+        }
+        .tel-link:hover {
+            background-color: #333;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            nav {
+                padding: 12px 20px;
+            }
+        }
+        main {
+            padding: 60px 0;
+        }
+        .blog-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .blog-header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+        .blog-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        .blog-meta {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+        .blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 48px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+        }
+        .blog-content h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            letter-spacing: -0.3px;
+        }
+        .blog-content h2:first-of-type {
+            margin-top: 0;
+        }
+        .blog-content h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: #2a2a2a;
+        }
+        .blog-content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .blog-content ul, .blog-content ol {
+            margin: 16px 0 24px 24px;
+            color: #444;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .blog-content li {
+            margin-bottom: 8px;
+        }
+        .blog-content .highlight-box {
+            background: #f4f4f4;
+            border-left: 4px solid #1a1a1a;
+            padding: 20px 24px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+        }
+        .blog-content .highlight-box p {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+        .blog-content .image-placeholder {
+            background: #e8e8e8;
+            height: 240px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 0.95rem;
+            margin: 24px 0;
+        }
+        .blog-footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e8e8e8;
+            text-align: center;
+        }
+        .blog-footer .tel-link {
+            margin-top: 12px;
+        }
+        footer {
+            background-color: #fff;
+            padding: 32px 0;
+            border-top: 1px solid #e8e8e8;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        footer p {
+            margin-bottom: 4px;
+        }
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: 1.8rem;
+            }
+            .blog-content {
+                padding: 28px 20px;
+            }
+            .blog-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">셔츠룸 가이드</a>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/about">소개</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="/contact">문의</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-btn" id="closeMenu" aria-label="메뉴 닫기">&times;</button>
+            <a href="/">홈</a>
+            <a href="/about">소개</a>
+            <a href="/blog">블로그</a>
+            <a href="/contact">문의</a>
+            <a href="tel:010-1234-5678" class="tel-link">전화 문의</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="blog-header">
+                <h1>망원 셔츠룸 추천, 형님들이 직접 가보고 알려주는 찐 후기</h1>
+                <p>망원에서 진짜 분위기 좋고 서비스 좋은 셔츠룸, 어디가 있을까? 형님들이 직접 경험하고 엄선한 TOP3를 지금 바로 공개합니다. 가격, 위치, 분위기까지 속 시원하게 알려드릴게요.</p>
+                <div class="blog-meta">
+                    <span>2025.03.21</span>
+                    <span>|</span>
+                    <span>셔츠룸 매니아</span>
+                    <span>|</span>
+                    <span>댓글 12개</span>
+                </div>
+            </div>
+
+            <div class="blog-content">
+                <h2>왜 망원 셔츠룸이 핫할까?</h2>
+                <p>요즘 홍대나 신촌 말고, 망원쪽 셔츠룸이 형님들 사이에서 입소문 타고 있대. 나도 처음엔 '망원? 좀 동네 아니야?' 싶었는데, 직접 가보니까 왜 핫한지 바로 알겠더라고. 일단 주차도 편하고, 주변에 맛집도 많아서 코스로 즐기기 좋아. 게다가 셔츠룸 자체가 아담하면서도 프라이빗한 분위기가 장난 아니야. 오늘은 내가 직접 발품 팔아서 찾은 망원 셔츠룸 3곳을 소개할게. 형들, 후회 안 할 자신 있어.</p>
+
+                <div class="image-placeholder">망원 셔츠룸 외관 이미지</div>
+
+                <h2>1. 망원 셔츠룸 A – 분위기와 서비스 모두 만족</h2>
+                <p>첫 번째로 소개할 곳은 망원에서 가장 핫하다는 A 셔츠룸이야. 인테리어부터가 다르더라고. 어두운 조명에 모던한 가구 배치, 그리고 적당한 음악 볼륨까지. 진짜 '아, 여기 제대로 왔구나' 싶은 느낌이 바로 들었어. 매니저분들도 친절하고, 특히 안주 퀄리티가 꽤 괜찮아. 내가 간 날은 야채볶음에 떡볶이까지 나왔는데, 이게 웬일? 술안주로 딱이야.</p>
+                <p>가격대는 좀 있는 편인데, 그만큼 서비스가 확실해. 형들끼리 오붓하게 한 잔 하기 좋은 곳이야. 위치도 망원역에서 도보 5분 거리라 접근성도 굿. 나는 여기 단골될 것 같아.</p>
+
+                <div class="highlight-box">
+                    <p><strong>형님의 한마디:</strong> "여기 매니저 누나가 추천해준 막걸리랑 떡볶이 조합, 진짜 미쳤어. 꼭 시켜보셈."</p>
+                </div>
+
+                <h2>2. 망원 셔츠룸 B – 가성비 끝판왕</h2>
+                <p>두 번째는 가성비로 유명한 B 셔츠룸이야. 사실 가격 때문에 고민하는 형들이 있을 거 같아서 소개하는데, 여기는 진짜 합리적이면서도 퀄리티를 놓치지 않았어. 기본 코스 가격이 부담 없고, 추가 금액도 투명하게 안내해줘서 좋았어. 분위기는 좀 더 캐주얼한 편인데, 오히려 부담 없이 즐기기 좋더라고.</p>
+                <p>특히 이곳은 단체 손님도 잘 받아줘서, 회식 자리나 친구들 모임에도 추천해. 나도 지난주에 형들 셋이서 갔는데, 다들 만족하고 헤어졌어. 서비스도 빠릿빠릿하고, 룸 상태도 깔끔해서 좋았어. 망원에서 가성비 원한다면 여기 강추야.</p>
+
+                <div class="highlight-box">
+                    <p><strong>형님의 한마디:</strong> "여기는 진짜 가격 대비 퀄리티가 미쳤어. 나는 여기 단골할 예정."</p>
+                </div>
+
+                <h2>3. 망원 셔츠룸 C – 프라이빗한 데이트 코스</h2>
+                <p>마지막은 약간 스몰럭셔리한 느낌의 C 셔츠룸이야. 여기는 좀 특별한 날 가기 좋은 곳이더라고. 인테리어가 고급스럽고, 룸도 널찍널찍해서 프라이빗한 분위기를 원하는 형들에게 딱이야. 매니저분들도 전문적이고, 음료와 안주도 프리미엄급으로 나와. 가격은 좀 나가지만, 그만한 값어치를 하는 곳이야.</p>
+                <p>특히 이곳은 조용히 대화하면서 술 한잔 하기 좋아. 비즈니스 미팅이나 중요한 자리에도 추천할 만해. 나도 다음에 중요한 손님 모실 일 있으면 여기로 잡을 생각이야. 망원에서 이런 곳 있을 줄 몰랐는데, 진짜 발견한 보물 같은 곳이야.</p>
+
+                <div class="highlight-box">
+                    <p><strong>형님의 한마디:</strong> "여기 분위기 진짜 로맨틱해서, 나는 여자친구랑 왔는데 완전 만족했어."</p>
+                </div>
+
+                <h2>망원 셔츠룸, 이렇게 골라보세요</h2>
+                <p>형들, 망원 셔츠룸 고를 때 몇 가지 팁을 줄게. 첫째, 분위기 중요하지만, 서비스가 더 중요해. 미리 전화해서 예약하고 가는 걸 추천해. 둘째, 가격은 투명한 곳이 좋아. 추가 금
+</body>
+</html>
