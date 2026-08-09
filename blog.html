@@ -1,305 +1,303 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-mono-chrome">
-    <title>망원 셔츠룸 추천 블로그 | 형님들이 알려주는 꿀팁</title>
-    <meta name="description" content="망원 셔츠룸, 진짜 가볼 만한 곳이 어딘지 궁금하시죠? 형님들이 직접 경험하고 추천하는 망원 셔츠룸 BEST 3. 분위기, 서비스, 가격까지 속 시원하게 알려드립니다.">
-    <meta name="keywords" content="망원 셔츠룸, 망원 셔츠룸 추천, 망원 셔츠룸 후기, 망원 셔츠룸 가격, 망원동 셔츠룸, 망원 셔츠룸 블로그">
-    <link rel="canonical" href="https://mangwon-shirt-trend.namanavi.com/blog.html">
-    <meta property="og:title" content="망원 셔츠룸 추천 블로그 | 형님들이 알려주는 꿀팁">
-    <meta property="og:description" content="망원 셔츠룸, 진짜 가볼 만한 곳이 어딘지 궁금하시죠? 형님들이 직접 경험하고 추천하는 망원 셔츠룸 BEST 3. 분위기, 서비스, 가격까지 속 시원하게 알려드립니다.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mangwon-shirt-trend.namanavi.com/blog.html">
-    <meta property="og:image" content="https://t3b07-mw-shirts-rc-2.vercel.app/og-image.jpg">
-    <meta name="twitter:card" content="summary">
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background-color: #f8f8f8;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background-color: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1a1a1a;
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-        .nav-links {
-            display: flex;
-            gap: 32px;
-            list-style: none;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #555;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .nav-links a:hover {
-            color: #1a1a1a;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 4px;
-        }
-        .hamburger span {
-            display: block;
-            width: 26px;
-            height: 2px;
-            background-color: #1a1a1a;
-            border-radius: 2px;
-            transition: all 0.3s;
-        }
-        .mobile-menu {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255,255,255,0.98);
-            z-index: 200;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 24px;
-        }
-        .mobile-menu.active {
-            display: flex;
-        }
-        .mobile-menu a {
-            font-size: 1.4rem;
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .mobile-menu .close-btn {
-            position: absolute;
-            top: 24px;
-            right: 24px;
-            font-size: 2rem;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: #1a1a1a;
-        }
-        .tel-link {
-            display: inline-block;
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 10px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: background-color 0.2s;
-        }
-        .tel-link:hover {
-            background-color: #333;
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            .hamburger {
-                display: flex;
-            }
-            nav {
-                padding: 12px 20px;
-            }
-        }
-        main {
-            padding: 60px 0;
-        }
-        .blog-header {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        .blog-header h1 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            color: #1a1a1a;
-            margin-bottom: 16px;
-        }
-        .blog-header p {
-            font-size: 1.1rem;
-            color: #666;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.7;
-        }
-        .blog-meta {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            margin-top: 20px;
-            font-size: 0.9rem;
-            color: #999;
-        }
-        .blog-content {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 48px 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-        }
-        .blog-content h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-top: 48px;
-            margin-bottom: 20px;
-            color: #1a1a1a;
-            letter-spacing: -0.3px;
-        }
-        .blog-content h2:first-of-type {
-            margin-top: 0;
-        }
-        .blog-content h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-top: 32px;
-            margin-bottom: 12px;
-            color: #2a2a2a;
-        }
-        .blog-content p {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: #444;
-            margin-bottom: 20px;
-        }
-        .blog-content ul, .blog-content ol {
-            margin: 16px 0 24px 24px;
-            color: #444;
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-        .blog-content li {
-            margin-bottom: 8px;
-        }
-        .blog-content .highlight-box {
-            background: #f4f4f4;
-            border-left: 4px solid #1a1a1a;
-            padding: 20px 24px;
-            border-radius: 0 8px 8px 0;
-            margin: 24px 0;
-        }
-        .blog-content .highlight-box p {
-            margin-bottom: 0;
-            font-size: 1rem;
-        }
-        .blog-content .image-placeholder {
-            background: #e8e8e8;
-            height: 240px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            font-size: 0.95rem;
-            margin: 24px 0;
-        }
-        .blog-footer {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid #e8e8e8;
-            text-align: center;
-        }
-        .blog-footer .tel-link {
-            margin-top: 12px;
-        }
-        footer {
-            background-color: #fff;
-            padding: 32px 0;
-            border-top: 1px solid #e8e8e8;
-            text-align: center;
-            color: #888;
-            font-size: 0.9rem;
-        }
-        footer p {
-            margin-bottom: 4px;
-        }
-        @media (max-width: 768px) {
-            .blog-header h1 {
-                font-size: 1.8rem;
-            }
-            .blog-content {
-                padding: 28px 20px;
-            }
-            .blog-content h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>망원 셔츠룸 추천 블로그 | 형님들이 알려주는 꿀팁</title>
+ <meta name="description" content="망원 셔츠룸, 진짜 가볼 만한 곳이 어딘지 궁금하시죠? 형님들이 직접 경험하고 추천하는 망원 셔츠룸 BEST 3. 분위기, 서비스, 가격까지 속 시원하게 알려드립니다.">
+ <meta name="keywords" content="망원 셔츠룸, 망원 셔츠룸 추천, 망원 셔츠룸 후기, 망원 셔츠룸 가격, 망원동 셔츠룸, 망원 셔츠룸 블로그">
+ <link rel="canonical" href="https://mangwon-shirt-trend.namanavi.com/blog.html">
+ <meta property="og:title" content="망원 셔츠룸 추천 블로그 | 형님들이 알려주는 꿀팁">
+ <meta property="og:description" content="망원 셔츠룸, 진짜 가볼 만한 곳이 어딘지 궁금하시죠? 형님들이 직접 경험하고 추천하는 망원 셔츠룸 BEST 3. 분위기, 서비스, 가격까지 속 시원하게 알려드립니다.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://mangwon-shirt-trend.namanavi.com/blog.html">
+ <meta property="og:image" content="https://t3b07-mw-shirts-rc-2.vercel.app/og-image.jpg">
+ <meta name="twitter:card" content="summary">
+ <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ line-height: 1.6;
+ color: #1a1a1a;
+ background-color: #f8f8f8;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ header {
+ background-color: #fff;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 16px 0;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding-left: 20px;
+ padding-right: 20px;
+ }
+ .logo {
+ font-size: 1.5rem;
+ font-weight: 700;
+ color: #1a1a1a;
+ text-decoration: none;
+ letter-spacing: -0.5px;
+ }
+ .nav-links {
+ display: flex;
+ gap: 32px;
+ list-style: none;
+ }
+ .nav-links a {
+ text-decoration: none;
+ color: #555;
+ font-size: 0.95rem;
+ font-weight: 500;
+ transition: color 0.2s;
+ }
+ .nav-links a:hover {
+ color: #1a1a1a;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 4px;
+ }
+ .hamburger span {
+ display: block;
+ width: 26px;
+ height: 2px;
+ background-color: #1a1a1a;
+ border-radius: 2px;
+ transition: all 0.3s;
+ }
+ .mobile-menu {
+ display: none;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(255,255,255,0.98);
+ z-index: 200;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 24px;
+ }
+ .mobile-menu.active {
+ display: flex;
+ }
+ .mobile-menu a {
+ font-size: 1.4rem;
+ color: #1a1a1a;
+ text-decoration: none;
+ font-weight: 500;
+ }
+ .mobile-menu .close-btn {
+ position: absolute;
+ top: 24px;
+ right: 24px;
+ font-size: 2rem;
+ background: none;
+ border: none;
+ cursor: pointer;
+ color: #1a1a1a;
+ }
+ .tel-link {
+ display: inline-block;
+ background-color: #1a1a1a;
+ color: #fff;
+ padding: 10px 24px;
+ border-radius: 6px;
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 1rem;
+ transition: background-color 0.2s;
+ }
+ .tel-link:hover {
+ background-color: #333;
+ }
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+ .hamburger {
+ display: flex;
+ }
+ nav {
+ padding: 12px 20px;
+ }
+ }
+ main {
+ padding: 60px 0;
+ }
+ .blog-header {
+ text-align: center;
+ margin-bottom: 48px;
+ }
+ .blog-header h1 {
+ font-size: 2.4rem;
+ font-weight: 700;
+ letter-spacing: -0.5px;
+ color: #1a1a1a;
+ margin-bottom: 16px;
+ }
+ .blog-header p {
+ font-size: 1.1rem;
+ color: #666;
+ max-width: 700px;
+ margin: 0 auto;
+ line-height: 1.7;
+ }
+ .blog-meta {
+ display: flex;
+ justify-content: center;
+ gap: 16px;
+ margin-top: 20px;
+ font-size: 0.9rem;
+ color: #999;
+ }
+ .blog-content {
+ max-width: 800px;
+ margin: 0 auto;
+ background: #fff;
+ padding: 48px 40px;
+ border-radius: 12px;
+ box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+ }
+ .blog-content h2 {
+ font-size: 1.8rem;
+ font-weight: 700;
+ margin-top: 48px;
+ margin-bottom: 20px;
+ color: #1a1a1a;
+ letter-spacing: -0.3px;
+ }
+ .blog-content h2:first-of-type {
+ margin-top: 0;
+ }
+ .blog-content h3 {
+ font-size: 1.3rem;
+ font-weight: 600;
+ margin-top: 32px;
+ margin-bottom: 12px;
+ color: #2a2a2a;
+ }
+ .blog-content p {
+ font-size: 1.05rem;
+ line-height: 1.8;
+ color: #444;
+ margin-bottom: 20px;
+ }
+ .blog-content ul, .blog-content ol {
+ margin: 16px 0 24px 24px;
+ color: #444;
+ font-size: 1.05rem;
+ line-height: 1.8;
+ }
+ .blog-content li {
+ margin-bottom: 8px;
+ }
+ .blog-content .highlight-box {
+ background: #f4f4f4;
+ border-left: 4px solid #1a1a1a;
+ padding: 20px 24px;
+ border-radius: 0 8px 8px 0;
+ margin: 24px 0;
+ }
+ .blog-content .highlight-box p {
+ margin-bottom: 0;
+ font-size: 1rem;
+ }
+ .blog-content .image-placeholder {
+ background: #e8e8e8;
+ height: 240px;
+ border-radius: 8px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #888;
+ font-size: 0.95rem;
+ margin: 24px 0;
+ }
+ .blog-footer {
+ margin-top: 48px;
+ padding-top: 24px;
+ border-top: 1px solid #e8e8e8;
+ text-align: center;
+ }
+ .blog-footer .tel-link {
+ margin-top: 12px;
+ }
+ footer {
+ background-color: #fff;
+ padding: 32px 0;
+ border-top: 1px solid #e8e8e8;
+ text-align: center;
+ color: #888;
+ font-size: 0.9rem;
+ }
+ footer p {
+ margin-bottom: 4px;
+ }
+ @media (max-width: 768px) {
+ .blog-header h1 {
+ font-size: 1.8rem;
+ }
+ .blog-content {
+ padding: 28px 20px;
+ }
+ .blog-content h2 {
+ font-size: 1.5rem;
+ }
+ }
+ </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">셔츠룸 가이드</a>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="/about">소개</a></li>
-                <li><a href="/blog">블로그</a></li>
-                <li><a href="/contact">문의</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-        <div class="mobile-menu" id="mobileMenu">
-            <button class="close-btn" id="closeMenu" aria-label="메뉴 닫기">&times;</button>
-            <a href="/">홈</a>
-            <a href="/about">소개</a>
-            <a href="/blog">블로그</a>
-            <a href="/contact">문의</a>
-            <a href="tel:010-1234-5678" class="tel-link">전화 문의</a>
-        </div>
-    </header>
+ <header>
+ <nav>
+ <a href="/" class="logo">셔츠룸 가이드</a>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/about">소개</a></li>
+ <li><a href="/blog">블로그</a></li>
+ <li><a href="/contact">문의</a></li>
+ </ul>
+ <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </button>
+ </nav>
+ <div class="mobile-menu" id="mobileMenu">
+ <button class="close-btn" id="closeMenu" aria-label="메뉴 닫기">&times;</button>
+ <a href="/">홈</a>
+ <a href="/about">소개</a>
+ <a href="/blog">블로그</a>
+ <a href="/contact">문의</a>
+ 
+ </div>
+ </header>
 
 <main class="container">
 <article>
@@ -343,7 +341,7 @@
 <p><strong>Q. 주차 공간이 있나요?</strong><br>매장별로 주차 가능 대수가 다르므로 예약 시 함께 확인하는 것이 좋습니다.</p>
 </div>
 <footer class="blog-footer">
-<p>문의 및 예약 안내: <a class="tel-link" href="tel:010-1234-5678">010-1234-5678</a></p>
+<p>문의 및 예약 안내: </p>
 </footer>
 </article>
 </main>
